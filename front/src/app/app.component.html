@@ -1,0 +1,6 @@
+<button (click)="scrapProducts()">scrap cultbeauty</button>
+<h2>BEST SELLING</h2>
+<app-products [products]="products | async | productsType:'bestSelling' "></app-products>
+<h2>TRENDING</h2>
+<app-products [products]="products | async | productsType:'trending'"></app-products>
+
